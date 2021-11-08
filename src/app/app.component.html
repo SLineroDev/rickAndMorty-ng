@@ -1,6 +1,17 @@
 <nav>
-
+  <img class="logo" src="../assets/logo.png" alt="" srcset="">
+  <form>
+    <input type="text" name="filter" [(ngModel)]="filterValue">
+    <button><img src="../assets/Vector.svg" alt=""></button>
+  </form>
+  <div class="flex-spacer"></div>
 </nav>
 <main>
-  <router-outlet></router-outlet>
+  <section class="character-list">
+    <div class="character" *ngFor="let character of characterList | filter:filterValue">
+      <img [src]="character.image" alt="" srcset="">
+      {{character.name}}
+    </div>
+  </section>
+  <!-- <router-outlet></router-outlet> -->
 </main>
