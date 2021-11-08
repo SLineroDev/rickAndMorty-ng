@@ -9,7 +9,7 @@
 <main>
   <section class="character-list">
     <div class="character" *ngFor="let character of characterList | filter:filterValue">
-      <img [src]="character.image" alt="" srcset="">
+      <img loading="lazy" [src]="character.image" width="250px" height="250px" alt="" srcset="">
       {{character.name}}
     </div>
   </section>
