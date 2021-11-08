@@ -78,6 +78,9 @@
               "browserTarget": "rickAndMorty-ng:build:development"
             }
           },
+          "options": {
+            "host": "localhost"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
