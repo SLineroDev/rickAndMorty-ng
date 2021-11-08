@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getJsonData(): Observable<CharacterResp> {
-    return this.http.get<CharacterResp>('/assets/data.json')
+    return this.http.get<CharacterResp>('assets/data.json')
   }
 
   getApiData(): Observable<CharacterResp> {
