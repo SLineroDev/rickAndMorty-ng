@@ -2,7 +2,8 @@ nav {
   background-color: #000827;
   padding: 2.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   .logo{
     width: 11rem;
@@ -10,7 +11,10 @@ nav {
 
   form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 1rem;
+
     input{
       height: 3.75rem;
       border: none;
@@ -20,6 +24,8 @@ nav {
       font-size: 1.25rem;
       color: #000;
       outline: none;
+      flex-grow: 1;
+      flex-shrink: 2rem;
     }
 
     button {
